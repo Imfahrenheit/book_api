@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title> My simple SPA </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="master.css">
+
+</head>
+
+<body>
+<!-- html elements for random quote generator -->
+    <div class=" container-fluid quotes " >
+        <div class="text-center " >
+            <h1 class="quote text-center text-info "></h1>
+            <h4 class="author text-muted"></h4>
+            <button class=" quoteButton  " type="button">Random Quote</button>
+            <dl class="lead text-center"> Quotes overdose! </dl>
+        </div>
+    </div>
+<!-- html elements for random quote generator ends here -->
+
+<!--main component of book finder apps-->
+    <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-md-offset-3">
+                    <h1><span class="text-muted">SEARCH </span>YOUR BOOK <span class="text-muted">BY </span> </h1>
+                    <!-- user put their input  here -->
+                    <input id="searchInput" placeholder="Title or Author" autofocus/>
+                    <br><br>
+                    <!-- user submit -->
+                    <button id="button" class="btn btn-primary btn-lg btn-block">SEARCH</button>
+                </div>
+            </div>
+
+            <div class="row mt-lg">
+                <div class="col-md-12" >
+                    <!-- formatted json items come here -->
+                    <div id="searchResults"></div>
+                </div>
+            </div>
+    </div>
+
+<!--all the dependency scripts are below -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script type="text/javascript" src= "jquery.easyPaginate.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+    <script type="text/javascript" src="quote.js">
+    </script>
+
+</body>
+
+</html>
