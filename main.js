@@ -98,11 +98,6 @@ document.getElementById('button').addEventListener('click', bookSearch, false)
 
 
 
-$('#searchResults').easyPaginate({
-    paginateElement: 'container',
-    elementsPerPage: 3,
-    effect: 'climb'
-});
 
 
 
